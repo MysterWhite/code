@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 3px;
+}
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+      display: none;
+  }
+
+  .burger {
+      display: block;
+      cursor: pointer;
+  }
+
+  input[type=checkbox]:checked ~ .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      background-color: black;
+      width: 50%;
+      height: 92vh;
+  }
+}
+
+
+h1 {
+  justify-content: center;
+  display: flex;   
+}
+ 
+.container {
+  width: 50%;
+  margin: 250px auto; 
+  overflow:hidden;
+}
+
+.slider {
+  height:100%;
+  display:flex;
+  width:100%;
+  border: 2px solid black;
+  background-color: beige;
+}
+
+body{
+  background-color: beige;
+  background-image: url(https://www.autourdumur.com/cdn/shop/products/tableau-chien-pop-art-animaux-format-paysage-multicolore.jpg?v=1674400868);
+}
+
+img {
+  
+  width: 100%;
+  margin: 250px auto; 
+  overflow:hidden;
+}
